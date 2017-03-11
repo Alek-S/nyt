@@ -1,9 +1,11 @@
+$(document).ready(function(){
 	$("#search").on("click", function() {
 		// Built by LucyBot. www.lucybot.com
 		var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
 		var apikey = "c04d522e56c94530aaee7cb136cc0cd9";
 
 		var searchTerm = $("#searchTerm").val();
+		console.log(searchTerm);
 		var numRecords = $("#numRecords").val();
 		var startYear = $("#startYear").val(); 
 		var endYear = $("#endYear").val(); 
@@ -80,3 +82,4 @@
 		});
 
 	});
+});
